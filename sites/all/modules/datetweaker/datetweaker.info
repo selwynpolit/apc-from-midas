@@ -1,0 +1,10 @@
+name = DateTweaker
+description = fiddle with date UI when adding date info
+dependencies[] = date_api
+package = Date Tweaker
+core = 7.x
+php = 5.2
+version = "7.x-1.0"
+core = "7.x"
+
+;files[] = date.migrate.inc

@@ -1,0 +1,26 @@
+<?php
+
+/**
+* @file 
+* Implement Date Tweaker Code
+*   
+*/
+
+/**
+* Implementation of preprocess_page
+* 
+* watches for node/add/event and loads my cool js code
+* @param mixed $variables
+*/
+
+function datetweaker_preprocess_page(&$variables){
+  $theme_path = path_to_theme();
+  $path = drupal_get_path_alias();
+  $pattern = 'node/add/event';
+  if (drupal_match_path($path, $pattern)) {
+      // Adds the jquery_UI library making it available for use.
+      //drupal_add_library('system', 'ui.autocomplete');
+      drupal_add_js(drupal_get_path('module', 'datetweaker') . '/datetweaker.js');
+    }
+  
+}

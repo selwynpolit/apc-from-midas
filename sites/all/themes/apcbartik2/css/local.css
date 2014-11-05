@@ -1,0 +1,323 @@
+/* local.css
+created by: Selwyn Polit
+On: 1-2-2013
+*/
+
+@font-face { font-family: "Droid Sans"; src: url('../fonts/DroidSans.ttf'); }
+@font-face { font-family: "Droid Sans"; font-weight:bold; src: url('../fonts/DroidSans-Bold.ttf'); }
+
+
+body, body.overlay {
+  /*color: #ACD3F2;*/
+  color: #3596E6;
+  color: #246DA9;
+  /*background:#ACD3F2;*/
+  font-family: "Droid Sans",Arial,sans-serif;
+
+}
+
+h1#page-title{
+	color:#0071B3;
+}
+
+#name-and-slogan {
+    font-size: 1.5em;
+}
+
+p {
+    margin: 0 0 1.2em;
+}
+
+#list-instruc {
+    text-align: center;
+}
+.sidebar .block .content {
+    font-size: 0.914em;
+    line-height: 1.4;
+}
+
+
+.region-header .block {
+    font-size: 1em;
+}
+
+
+
+
+/*  http://www.austinprogressivecalendar.com/permablitz */
+#list-instruc{
+	border: 1px solid rgb(53, 150, 230);
+	text-align: center;
+	//color: #d7e8f5;
+	background-color: #d7e8f5;
+}
+#list-instruc p{
+	margin:0px;
+	padding: 5px;
+	font-size: 130%;
+	text-align: center;
+}
+
+
+
+#block-views-permablitz-block h2{
+	text-align: center;
+	font-weight: bold; 
+	
+}
+.view-display-id-block .more-link a{
+	text-transform:uppercase;
+	font-size:1.2em;
+	color:#000060;
+	background-color:#d7e8f5;
+}
+
+.field-name-field-potluck-date
+{
+padding-bottom:25px;
+/*
+	//font-size:18px;
+	//border-bottom: 1px solid #d3d7d9;
+	//background-color: #f2f2f2;
+*/
+}
+
+
+.node-potluck .page-title
+{
+text-align:center;
+}
+
+.node-potluck .field-name-field-potluck-date
+{
+margin-left: 40px;
+}
+
+
+.field-name-field-potluck-date .field-items, .field-name-field-potluck-date .field-label
+{
+font-size:18px;
+border-bottom: 1px solid #d3d7d9;
+background-color: #f2f2f2;
+}
+
+#gmap-auto1map-gmap0
+{
+border: 1px solid #d3d7d9;
+padding 5px;
+}
+
+.field-name-field-host-directions
+{
+padding-top: 20px;
+margin-left: 20px;
+//border: 1px solid #d3d7d9;
+
+}
+
+.node-potluck .field-name-body
+{
+margin-left: 20px;
+margin-right: 20px;
+//border: 1px solid #d3d7d9;
+border: 1px solid #ccc;
+padding-left: 20px ;
+padding-right: 20px ;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+.node-potluck .field-name-field-instructions
+{
+margin-left: 20px;
+margin-right: 20px;
+border: 1px solid #ccc;
+padding-left: 20px ;
+padding-right: 20px ;
+padding-top: 5px;
+padding-bottom: 5px;
+margin-bottom: 50px;
+}
+
+.node-potluck .field-name-taxonomy-vocabulary-1
+{
+padding-top: 25px;
+
+}
+
+#farmers-market-title
+{
+background-color: #f2f2f2;
+  width: 600px;
+  border: 1px solid #ccc;
+  padding: 10px 10px 10px 10px ;
+  font-size: 1.5em;
+  line-height: 1;
+}
+.views-field-service-links
+{
+padding-left: 20px;
+}
+
+
+
+
+#main-wrapper, #page
+{
+background-color:#D7E8F5;
+}
+
+td.multi-day .date-display-start .date-display-end{
+//background-color: red;
+//height: 120px;
+//min-height: 60px;
+}
+
+
+.calendar-calendar div.calendar {
+    font-size: x-small;
+	font-size: 1.2em;
+}
+
+
+
+/* superfish pomegranate override */
+
+.sf-menu.sf-style-pomegranate {
+  float: left;
+  margin-bottom: 1em;
+  padding: 0;
+}
+.sf-menu.sf-style-pomegranate.sf-navbar {
+  width: 100%;
+}
+.sf-menu.sf-style-pomegranate ul {
+  padding-left: 0;
+}
+.sf-menu.sf-style-pomegranate a {
+  border: 1px outset #68000e;
+  color: #ffebee;
+  padding: 0.75em 1em;
+}
+.sf-menu.sf-style-pomegranate a.sf-with-ul {
+  padding-right: 2.25em;
+}
+.sf-menu.sf-style-pomegranate.rtl a.sf-with-ul {
+  padding-left: 2.25em;
+  padding-right: 1em;
+}
+.sf-menu.sf-style-pomegranate.sf-navbar a {
+  border: 0;
+}
+.sf-menu.sf-style-pomegranate span.sf-description {
+  color: #13a;
+  display: block;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 5px 0 0 5px;
+  padding: 0;
+}
+.sf-menu.sf-style-pomegranate li,
+.sf-menu.sf-style-pomegranate.sf-navbar {
+  background: #79001c;
+  background: #59b5e3;
+
+}
+.sf-menu.sf-style-pomegranate li li{
+  background: #6c0019;
+  background: #59b5e3;
+}
+.sf-menu.sf-style-pomegranate li li li {
+  background: #5f0016;
+  background: #59b5e3;
+}
+.sf-menu.sf-style-pomegranate li:hover,
+.sf-menu.sf-style-pomegranate li.sfHover,
+.sf-menu.sf-style-pomegranate li.active a,
+.sf-menu.sf-style-pomegranate a:focus,
+.sf-menu.sf-style-pomegranate a:hover,
+.sf-menu.sf-style-pomegranate a:active,
+.sf-menu.sf-style-pomegranate.sf-navbar li li {
+  background: #4c0012;
+  color: #ffffff;
+}
+.sf-menu.sf-style-pomegranate.sf-navbar li ul {
+  background-color: #4c0012;
+}
+.sf-menu.sf-style-pomegranate.sf-navbar li ul li ul {
+  background-color: transparent;
+}
+.sf-menu.sf-style-pomegranate ul.sf-megamenu li.sf-megamenu-wrapper ol,
+.sf-menu.sf-style-pomegranate ul.sf-megamenu li.sf-megamenu-wrapper ol li {
+  margin: 0;
+  padding: 0;
+}
+.sf-menu.sf-style-pomegranate ul.sf-megamenu li.sf-megamenu-wrapper a.menuparent {
+  font-weight: bold;
+}
+.sf-menu.sf-style-pomegranate ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+  display: inline;
+  float: left;
+  width: 12em;
+}
+.sf-menu.sf-style-pomegranate.rtl ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+  float: right;
+}
+.sf-menu.sf-style-pomegranate li.sf-parent-children-1 ul.sf-megamenu {
+  width: 12em;
+}
+.sf-menu.sf-style-pomegranate li.sf-parent-children-2 ul.sf-megamenu {
+  width: 24em;
+}
+.sf-menu.sf-style-pomegranate li.sf-parent-children-3 ul.sf-megamenu {
+  width: 36em;
+}
+.sf-menu.sf-style-pomegranate li.sf-parent-children-4 ul.sf-megamenu {
+  width: 48em;
+}
+.sf-menu.sf-style-pomegranate li.sf-parent-children-5 ul.sf-megamenu {
+  width: 60em;
+}
+.sf-menu.sf-style-pomegranate li.sf-parent-children-6 ul.sf-megamenu {
+  width: 72em;
+}
+.sf-menu.sf-style-pomegranate li.sf-parent-children-7 ul.sf-megamenu {
+  width: 84em;
+}
+.sf-menu.sf-style-pomegranate li.sf-parent-children-8 ul.sf-megamenu {
+  width: 96em;
+}
+.sf-menu.sf-style-pomegranate li.sf-parent-children-9 ul.sf-megamenu {
+  width: 108em;
+}
+.sf-menu.sf-style-pomegranate li.sf-parent-children-10 ul.sf-megamenu {
+  width: 120em;
+}
+
+#header div.section{
+height: 108px;
+}
+
+div.messages{
+margin-top: 71px;
+margin-left: 59px;
+margin-right: 59px;
+}
+/* nuke breadcrumb */
+#breadcrumb { display:none; }
+
+.node-mywork .field-name-field-weblink{
+	margin-bottom:20px;
+	font-weight: bold;
+}
+
+
+.field a:link {
+	color: blue;
+	font-weight:bold;
+}
+
+.field a:visited {
+	color: #909090;
+	font-weight:bold;
+}

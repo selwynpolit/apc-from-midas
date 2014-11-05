@@ -1,0 +1,63 @@
+<?php
+/*
+ *
+ */
+
+function bgcbdev_inspect_stack($note = NULL) {
+	$str = '';
+	foreach(debug_backtrace() as $i => $frame) {
+        if(isset($frame['file'])) {
+                $file = $frame['file'];
+                chop($file);
+        }
+		if($file == '') {
+			$file = '[no file]';
+		}
+        if(isset($frame['line'])) {
+                $line = $frame['line'];
+        }
+		if($line == '') {
+			$line = '[no line]';
+		}
+		$str .= $file.', line '.$line.': '.$frame['function'];
+
+		$arg_strs = array();
+		if(is_array($frame['args'])) {
+			foreach($frame['args'] as $n => $argval) {
+				switch(gettype($argval)) {
+				case "boolean":
+					$arg_strs[] = ($argval ? 'TRUE' : 'FALSE');
+					break;
+				case "integer":
+				case "double":
+					$arg_strs[] = $argval;
+					break;
+				case "string":
+					$argval = str_replace("\n", " \\", $argval);
+					if(strlen($argval) > 30) {
+						$argval = substr($argval, 0, 27).'...';
+					}
+					$arg_strs[] = "'$argval'";
+					break;
+				case "array":
+				case "object":
+				case "resource":
+				case "unknown type":
+					$arg_strs[] = "(".gettype($argval).")";
+					break;
+				case "NULL":
+					$arg_strs[] = 'NULL';
+					break;
+				}
+			}
+		}
+		$str .= '('.implode(', ', $arg_strs).")\n";
+	}
+
+	if(isset($note)) {
+		$note = ' note:'.$note;
+	}
+	if(!file_put_contents('sites/default/files/tmp/debug-backtrace.log', date('c', time()).":$note\n".$str."\n", FILE_APPEND)) {
+		watchdog('bgcbdev', "Couldn't write to debug file sites/default/files/tmp/debug-backtrace.log:\n<pre>$str</pre>", NULL, WATCHDOG_DEBUG);
+	}
+}
