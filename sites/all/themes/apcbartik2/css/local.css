@@ -321,3 +321,17 @@ margin-right: 59px;
 	color: #909090;
 	font-weight:bold;
 }
+
+/*
+ * fix for admin-menu 12-10-14 firefox 34
+ *
+ */
+
+#admin-menu .dropdown li li {
+      opacity: 1;
+        background-color: rgba(69, 69, 69, 0.88);
+    }
+#admin-menu li li {
+      opacity: 1;
+        background-color: rgba(69, 69, 69, 0.88);
+
